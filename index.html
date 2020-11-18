@@ -1843,16 +1843,7 @@ font-size:x-large;
 
 <body onresize = "fract.fixsize();">
 
-<div id="homediv" class="homediv"><a id="homelink" class="homelink" href="http://sciencevsmagic.net/">sciencevsmagic.net</a></div>
-
 <div id="controls" class="controls">
-
-<div id="helpbutton" class="pushbutton" onclick="fract.help.toggle()">
-	<div class="pushback">
-	<a class="pushfore"> ? </a> </div>
-</div>
-
-<a> NICO'S FRACTAL MACHINE</a>
 
 <div class="sliderlinecontainer" onmousedown="fract.angle.jump(event)" onmouseover="fract.help.show('angle')" onmouseout="fract.help.show('default')">
 	<div class="slider" id="angle" onmousedown="fract.angle.down(event)">
@@ -1916,14 +1907,6 @@ font-size:x-large;
 </div>
 
 <div id="helpdefault" class="helpdiv">
-	<p class="heading">NICO'S FRACTAL MACHINE</p>
-	<p class="advice">The shape you see is the combined output of the controls below. Mouse over them to see what they do.
-	</p>
-	<p class="advice">If the page gets too slow, turn some of the parameters down.
-	</p>
-	<p class="advice">Press H or ~ to hide the controls.
-	</p>
-	<a class="blog" href="http://blog.sciencevsmagic.net/science/fractal-machine/">Find out more in this blog post.</a>
 </div>
 
 <div id="helpangle" class="hidden">
@@ -1988,20 +1971,6 @@ Mirror the motif at every level of the fractal.
 <script>
 fract.init ();
 </script>
-
-<!-- Piwik -->
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://sciencevsmagic.net/statistics/" : "http://sciencevsmagic.net/statistics/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://sciencevsmagic.net/statistics/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
-<!-- End Piwik Tracking Code -->
-
 </body>
 
 </html> 
